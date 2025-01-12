@@ -112,24 +112,74 @@
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
+         <!-- Modal Enquiry Start -->
+         <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex align-items-center bg-primary">
                         <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+                            <div>
+                            
+                                <form>
+                                    <div class="row g-4">
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                                                <label for="name">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
+                                                <label for="phone">Your Phone</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="project" placeholder="Project">
+                                                <label for="project">Your Location</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 125px"></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                                <label class="form-check-label" for="flexCheck">I agree with the site privacy policy</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search End -->
+        <!-- Modal Enquiry End -->
 
 
         <!-- Header Start -->
@@ -146,12 +196,12 @@
         <!-- Header End -->
 
 
-        <!-- Services Start -->
-        <div class="container-fluid service py-5">
+         <!-- Services Start -->
+         <div class="container-fluid service py-5">
             <div class="container py-5">
                 <div class="d-flex flex-column mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                     <h4 class="text-primary">Our Services</h4>
-                    <h1 class="display-4 mb-4">The Best Service For You</h1>
+                    <h1 class="display-4 mb-4">The Best Road Assitance Service For You</h1>
                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, deserunt provident ab voluptates rerum eaque eum magni autem atque in minus laboriosam corrupti deleniti voluptatibus rem reiciendis modi veniam animi?
                     </p>
                 </div>
@@ -180,30 +230,30 @@
                             <div id="ServiceTab-1" class="tab-pane fade show p-0 active">
                                 <div class="service-carousel owl-carousel">
                                     <div class="service-item">
-                                        <img src="img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-1.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Brite Spark Services</h4>
+                                            <h4 class="mb-3">Service-1</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#"  data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-2.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Energy Ease Packages</h4>
+                                            <h4 class="mb-3">Service-2</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/commercial-3.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-3.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Electra Care Packages</h4>
+                                            <h4 class="mb-3">Service-3</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -211,30 +261,30 @@
                             <div id="ServiceTab-2" class="tab-pane fade show p-0">
                                 <div class="service-carousel owl-carousel">
                                     <div class="service-item">
-                                        <img src="img/residential-1.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-4.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Electrical Services</h4>
+                                            <h4 class="mb-3">Service-4</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/residential-2.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-5.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Security Systems</h4>
+                                            <h4 class="mb-3">Service-5</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/residential-3.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-6.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Air Conditioner</h4>
+                                            <h4 class="mb-3">Service-6</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -242,30 +292,30 @@
                             <div id="ServiceTab-3" class="tab-pane fade show p-0">
                                 <div class="service-carousel owl-carousel">
                                     <div class="service-item">
-                                        <img src="img/industrial-1.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-2.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Factory Manufacture</h4>
+                                            <h4 class="mb-3">Service-7</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/industrial-2.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-1.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">General Electrical</h4>
+                                            <h4 class="mb-3">Service-8</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/industrial-3.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-5.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Electrical Planing</h4>
+                                            <h4 class="mb-3">Service-9</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                 </div>

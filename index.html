@@ -102,7 +102,7 @@
                                    
                                     <div class="nav-btn ps-3">
                                         <!-- <button class="btn-search btn btn-primary btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
-                                        <a href="#" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3"> Enquire Now</a>
+                                        <a href="#" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3" data-bs-toggle="modal" data-bs-target="#enquireModal"> Enquire Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -113,24 +113,74 @@
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
+        <!-- Modal Enquiry Start -->
+        <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex align-items-center bg-primary">
                         <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+                            <div>
+                            
+                                <form>
+                                    <div class="row g-4">
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                                                <label for="name">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
+                                                <label for="phone">Your Phone</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="project" placeholder="Project">
+                                                <label for="project">Your Location</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 125px"></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                                <label class="form-check-label" for="flexCheck">I agree with the site privacy policy</label>
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search End -->
+        <!-- Modal Enquiry End -->
 
 
         <!-- Carousel Start -->
@@ -147,7 +197,7 @@
                                     <h1 class="display-2 text-white mb-4">Emergency road assistant service</h1>
                                     <p class="mb-5 fs-5">Quick response to your queries. We offer you the best service at reasonable cost</p>
                                     <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Enquire Now</a>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal"></a>>Enquire Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +217,7 @@
                                     <h1 class="display-2 text-white mb-4">At any time anywhere.</h1>
                                     <p class="mb-5 fs-5">Quick response to your queries. We offer you the best service at reasonable cost</p>
                                     <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Enquire Now</a>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal"></a>>Enquire Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +297,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex align-items-center justify-content-lg-end h-100">
-                            <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">EXPLORE MORE</a>
+                            <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#"  data-bs-toggle="modal" data-bs-target="#enquireModal"></a>>ENQUIRE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -256,12 +306,12 @@
         <!-- Banner End -->
 
 
-        <!-- Services Start -->
-        <div class="container-fluid service py-5">
+         <!-- Services Start -->
+         <div class="container-fluid service py-5">
             <div class="container py-5">
                 <div class="d-flex flex-column mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                     <h4 class="text-primary">Our Services</h4>
-                    <h1 class="display-4 mb-4">The Best Pickup Service in Kochi</h1>
+                    <h1 class="display-4 mb-4">The Best Road Assitance Service For You</h1>
                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, deserunt provident ab voluptates rerum eaque eum magni autem atque in minus laboriosam corrupti deleniti voluptatibus rem reiciendis modi veniam animi?
                     </p>
                 </div>
@@ -270,17 +320,17 @@
                         <ul class="nav">
                             <li class="nav-item me-lg-0 mb-4">
                                 <a class="py-3 px-5 active" data-bs-toggle="pill" href="#ServiceTab-1">
-                                    <span>Service-1</span>
+                                    <span>Commercial</span>
                                 </a>
                             </li>
                             <li class="nav-item me-lg-0 mb-4">
                                 <a class="py-3 px-5" data-bs-toggle="pill" href="#ServiceTab-2">
-                                    <span>Service-2</span>
+                                    <span>Residential</span>
                                 </a>
                             </li>
                             <li class="nav-item me-lg-0 mb-4 mb-lg-0">
                                 <a class="py-3 px-5" data-bs-toggle="pill" href="#ServiceTab-3">
-                                    <span>Service-3</span>
+                                    <span>Industrial</span>
                                 </a>
                             </li>
                         </ul>
@@ -290,30 +340,30 @@
                             <div id="ServiceTab-1" class="tab-pane fade show p-0 active">
                                 <div class="service-carousel owl-carousel">
                                     <div class="service-item">
-                                        <img src="img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-1.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Emergency road assistant service</h4>
+                                            <h4 class="mb-3">Service-1</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#"  data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-2.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Emergency road assistant service</h4>
+                                            <h4 class="mb-3">Service-2</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/commercial-3.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-3.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Emergency road assistant service</h4>
+                                            <h4 class="mb-3">Service-3</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -321,30 +371,30 @@
                             <div id="ServiceTab-2" class="tab-pane fade show p-0">
                                 <div class="service-carousel owl-carousel">
                                     <div class="service-item">
-                                        <img src="img/residential-1.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-4.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Crane Services</h4>
+                                            <h4 class="mb-3">Service-4</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/residential-2.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-5.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Small vehicle pickup</h4>
+                                            <h4 class="mb-3">Service-5</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/residential-3.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-6.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Big vehicle pickup</h4>
+                                            <h4 class="mb-3">Service-6</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -352,30 +402,30 @@
                             <div id="ServiceTab-3" class="tab-pane fade show p-0">
                                 <div class="service-carousel owl-carousel">
                                     <div class="service-item">
-                                        <img src="img/industrial-1.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-2.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Service-1</h4>
+                                            <h4 class="mb-3">Service-7</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/industrial-2.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-1.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Service-2</h4>
+                                            <h4 class="mb-3">Service-8</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                     <div class="service-item">
-                                        <img src="img/industrial-3.jpg" class="img-fluid w-100" alt="">
+                                        <img src="img/service-5.webp" class="img-fluid w-100" alt="">
                                         <div class="border border-top-0 p-4">
-                                            <h4 class="mb-3">Service-3</h4>
+                                            <h4 class="mb-3">Service-9</h4>
                                             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, beatae ex. Id esse autem ratione vero cupiditate tempora recusandae est!
                                             </p>
-                                            <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                            <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -399,22 +449,22 @@
                             <ul class="nav">
                                 <li class="nav-item bg-white mb-4 w-100">
                                     <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-1">
-                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Power Path Unveiling Our process</span>
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Lorem Ipsum</span>
                                     </a>
                                 </li>
                                 <li class="nav-item bg-white mb-4 w-100">
                                     <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-2">
-                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-charging-station small"></span></div><span>Electro Flow Decoding Our method</span>
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-charging-station small"></span></div><span>Lorem Ipsum</span>
                                     </a>
                                 </li>
                                 <li class="nav-item bg-white mb-4 w-100">
                                     <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-3">
-                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-broadcast-tower small"></span></div><span>Energetic Engine Behind Scenes</span>
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-broadcast-tower small"></span></div><span>Lorem Ipsum</span>
                                     </a>
                                 </li>
                                 <li class="nav-item bg-white mb-4 w-100">
                                     <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-4">
-                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Watt Works Discover Operations</span>
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Lorem Ipsum</span>
                                     </a>
                                 </li>
                             </ul>
@@ -424,45 +474,45 @@
                         <div class="tab-content">
                             <div id="ProjectsTab-1" class="tab-pane fade show p-0 active">
                                 <div class="projects-item">
-                                    <img src="img/industrial-1.jpg" class="img-fluid w-100" alt="">
+                                    <img src="img/service-1.webp" class="img-fluid w-100" alt="">
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Lorem ipsum dolor</h4>
                                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
                                         </p>
-                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                        <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                     </div>
                                 </div>
                             </div>
                             <div id="ProjectsTab-2" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/industrial-2.jpg" class="img-fluid w-100" alt="">
+                                    <img src="img/service-2.webp" class="img-fluid w-100" alt="">
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Lorem ipsum dolor</h4>
                                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
                                         </p>
-                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                        <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                     </div>
                                 </div>
                             </div>
                             <div id="ProjectsTab-3" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                                    <img src="img/service-3.webp" class="img-fluid w-100" alt="">
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Lorem ipsum dolor</h4>
                                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
                                         </p>
-                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                        <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                     </div>
                                 </div>
                             </div>
                             <div id="ProjectsTab-4" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                    <img src="img/service-4.webp" class="img-fluid w-100" alt="">
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-4">Lorem ipsum dolor</h4>
                                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quo? Enim facere, praesentium voluptatem vero officiis libero fuga rem autem amet recusandae voluptates, dolorem quo magni. Corporis eveniet consequuntur accusantium.
                                         </p>
-                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                        <a class="btn btn-primary py-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -576,7 +626,7 @@
                     <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-2.jpg" class="img-fluid w-100" alt="">
+                                <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
                                 <div class="team-icon">
                                     <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-twitter"></i></a>
@@ -593,7 +643,7 @@
                     <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
+                                <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
                                 <div class="team-icon">
                                     <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-twitter"></i></a>
@@ -610,7 +660,7 @@
                     <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-4.jpg" class="img-fluid w-100" alt="">
+                                <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
                                 <div class="team-icon">
                                     <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mb-2" href=""><i class="fab fa-twitter"></i></a>
